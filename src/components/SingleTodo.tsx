@@ -3,7 +3,7 @@ import { Todo } from "../model"
 import { AiFillEdit, AiFillDelete } from 'react-icons/ai'
 import { MdDone } from 'react-icons/md'
 
-type Props = { // only Types use equal sign
+interface Props { // only Types use equal sign
     todo: Todo,
     todos: Todo[],
     setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
